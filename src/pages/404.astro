@@ -1,0 +1,18 @@
+---
+import Base from '@/templates/Base.astro';
+import { AppConfig } from '@/utils/AppConfig';
+
+const { title } = AppConfig;
+const { description } = AppConfig;
+---
+
+<Base head={{ title, description }}>
+  <div class="mx-auto justify-center text-center md:container">
+    <p class="mb-4 text-2xl">Seite nicht gefunden.</p>
+
+    <p>
+      Sorry, ich hier hat meine Tastatur aufgegeben und ich konnte diese Seite
+      noch nicht anlegen. Komm am besten später nochmal her.
+    </p>
+  </div>
+</Base>
